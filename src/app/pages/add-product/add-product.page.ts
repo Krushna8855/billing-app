@@ -31,11 +31,12 @@ export class AddProductPage {
       // Simulate saving the product (you could connect to a service here)
       console.log('Product saved:', this.product);
 
-      // Clear the form after saving
-      this.clearForm();
+      
 
       // Optionally, navigate to another page, e.g., the product list
       this.dataService.addProduct(this.product);
+      // Clear the form after saving
+      this.clearForm();
       this.navCtrl.back();
     } else {
       console.error('Please fill out all required fields.');
