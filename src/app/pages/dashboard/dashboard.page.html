@@ -1,0 +1,69 @@
+
+<ion-content class="dashboard-content">
+  <ion-grid>
+    <!-- Total Sales and Revenue Report -->
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="info-card">
+          <ion-card-header>
+            <ion-icon name="bar-chart-outline" slot="start" size="large"></ion-icon>
+            <h2>Total Sales</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="revenue">{{ totalSales }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="info-card">
+          <ion-card-header>
+            <ion-icon name="cash-outline" slot="start" size="large"></ion-icon>
+            <h2>Total Revenue</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="revenue">₹{{ totalRevenue }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Navigation Buttons for Customer, Product, and Billing Pages -->
+    <ion-row>
+      <ion-col size="4">
+        <ion-card button class="nav-card" (click)="goToCustomers()">
+          <ion-card-header>
+            <ion-icon name="people-outline" slot="start" size="large"></ion-icon>
+            <h2>Manage Customers</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <p>View and Add Customers</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card button class="nav-card" (click)="goToProducts()">
+          <ion-card-header>
+            <ion-icon name="cart-outline" slot="start" size="large"></ion-icon>
+            <h2>Manage Products</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <p>View and Add Products</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card button class="nav-card" (click)="goToBilling()">
+          <ion-card-header>
+            <ion-icon name="receipt-outline" slot="start" size="large"></ion-icon>
+            <h2>Product Billing</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Create and Manage Bills</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

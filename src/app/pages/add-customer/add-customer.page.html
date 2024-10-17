@@ -1,0 +1,63 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h2 class="page-title">Add New Customer</h2>
+      </ion-col>
+    </ion-row>
+
+    <!-- Name Input -->
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="styled-item">
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="text" [(ngModel)]="customerName"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Gender Selection -->
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="styled-item">
+          <ion-label>Gender</ion-label>
+          <ion-select [(ngModel)]="customerGender" placeholder="Select Gender">
+            <ion-select-option value="Male">Male</ion-select-option>
+            <ion-select-option value="Female">Female</ion-select-option>
+            <ion-select-option value="Other">Other</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Contact Input -->
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="styled-item">
+          <ion-label position="floating">Contact</ion-label>
+          <ion-input type="text" [(ngModel)]="customerContact"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Email Input -->
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="styled-item">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="customerEmail"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Save and Cancel Buttons -->
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-button expand="block" color="primary" (click)="saveCustomer()">Save Customer</ion-button>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-button expand="block" color="light" (click)="cancel()">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

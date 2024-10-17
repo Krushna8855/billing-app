@@ -1,0 +1,61 @@
+.dashboard-content {
+    --ion-background-color: #f7f8fc; /* Light background color for a modern look */
+    padding: 16px;
+  }
+  
+  ion-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card depth */
+  }
+  
+  .info-card {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+  }
+  
+  .info-card ion-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-card h2 {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .revenue{
+    font-size: xx-large;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  .nav-card {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    min-height: 25vh;
+  }
+  
+  .nav-card ion-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-card ion-icon {
+    margin-right: 8px;
+    font-size: 1.5rem;
+   
+  }
+  
+  .nav-card h2 {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  ion-card-content {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  

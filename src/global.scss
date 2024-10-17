@@ -1,0 +1,132 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+
+/* General Layout and Styling */
+
+ion-content {
+    --ion-background-color: var(--ion-color-light);
+    padding: var(--padding-medium);
+  }
+  
+  ion-card {
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    margin: var(--padding-small) 0;
+    padding: var(--padding-medium);
+  }
+  
+  ion-card-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-card-content {
+    font-size: var(--font-medium);
+  }
+  
+  ion-button {
+    border-radius: 24px;
+    --padding-start: var(--padding-large);
+    --padding-end: var(--padding-large);
+    font-weight: bold;
+  }
+  
+  ion-icon {
+    font-size: 1.5rem;
+    margin-right: var(--padding-small);
+  }
+  
+  /* Form Inputs */
+  ion-input, ion-textarea, ion-select {
+    --padding-start: var(--padding-medium);
+    --padding-end: var(--padding-medium);
+    --background: #ffffff;
+    box-shadow: var(--shadow-soft);
+    border-radius: 12px;
+    margin-bottom: var(--padding-medium);
+  }
+  
+  ion-item-divider {
+    --background: transparent;
+    --color: var(--ion-color-dark);
+    text-align: left;
+    font-weight: bold;
+    padding: var(--padding-small) 0;
+  }
+  
+  form {
+    padding: var(--padding-medium);
+  }
+  
+  /* Header */
+  app-header {
+    background-color: var(--ion-color-primary);
+    color: white;
+    box-shadow: var(--shadow-soft);
+    padding: var(--padding-medium);
+  }
+  
+  app-header ion-title {
+    font-size: var(--font-large);
+    font-weight: bold;
+  }
+  
+  /* Customizing ion-grid for a more modern look */
+  ion-grid {
+    padding: var(--padding-medium);
+  }
+  
+  ion-row {
+    margin-bottom: var(--padding-small);
+  }
+  
+  ion-col {
+    text-align: center;
+  }
+  
+  /* Centered content layout */
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  

@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let customer of customers" class="customer-item">
+      <ion-icon name="person-outline" slot="start" class="customer-icon"></ion-icon>
+      <ion-label>
+        <h2 class="customer-name">{{ customer.name }}</h2>
+        <p class="customer-contact">{{ customer.contact }}</p>
+        <p class="customer-email">{{ customer.email }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- FAB Button -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary" routerLink="/add-customer">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

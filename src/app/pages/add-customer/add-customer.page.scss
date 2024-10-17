@@ -1,0 +1,60 @@
+/* General Page Styling */
+ion-content {
+    --ion-background-color: #f7f8fa;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  /* Input Field Styling */
+  .styled-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  ion-label {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  ion-input, ion-select {
+    --padding-start: 12px;
+    --padding-end: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Button Styling */
+  ion-button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 24px;
+    padding: 10px;
+  }
+  
+  ion-button[color="primary"] {
+    --background: #4caf50; /* Primary Save Button */
+  }
+  
+  ion-button[color="light"] {
+    --background: #e0e0e0; /* Cancel Button */
+    --color: #333;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    ion-col {
+      --ion-grid-column-padding: 8px;
+    }
+  }
+  

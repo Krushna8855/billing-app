@@ -1,0 +1,75 @@
+<ion-content>
+  <ion-grid>
+    <!-- Customer Dropdown -->
+    <ion-row>
+      <ion-col>
+        <ion-item class="styled-item">
+          <ion-label>Customer</ion-label>
+          <ion-select [(ngModel)]="selectedCustomer" placeholder="Select customer">
+            <ion-select-option *ngFor="let customer of customers" [value]="customer">
+              {{ customer.name }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Products Dropdown with Quantity Input -->
+    <ion-row>
+      <ion-col>
+        <ion-item class="styled-item">
+          <ion-label>Product</ion-label>
+          <ion-select [(ngModel)]="selectedProduct" placeholder="Select product">
+            <ion-select-option *ngFor="let product of products" [value]="product">
+              {{ product.name }} - ₹{{ product.price }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+          </ion-row>
+<ion-row>
+  <ion-col size="12" size-md="12">
+    <ion-item class="styled-item">
+      <ion-label position="floating">Quantity</ion-label>
+      <ion-input type="number" [(ngModel)]="selectedQuantity"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="12" size-md="12">
+    <ion-button expand="block" (click)="addProductToBill()">Add to Bill</ion-button>
+  </ion-col>
+
+</ion-row>
+    <!-- Display Billing Details -->
+    <ion-list>
+      <ion-item *ngFor="let item of billItems" class="billing-item">
+        <ion-label>
+          {{ item.product.name }} (x{{ item.quantity }}) - ₹{{ item.totalPrice }}
+        </ion-label>
+        <ion-button color="danger" fill="clear" (click)="removeProduct(item)">
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+
+    <!-- Display Total Amount -->
+    <ion-row>
+      <ion-col>
+        <ion-item class="total-item">
+          <ion-label><strong>Total:</strong> ₹{{ totalAmount }}</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Save or Cancel Billing -->
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-button expand="block" color="primary" (click)="saveBilling()">Save Billing</ion-button>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-button expand="block" color="light" (click)="clearBilling()">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,40 @@
+/* Header toolbar styling */
+.custom-header-toolbar {
+    --background: #4caf50; /* Primary color for the toolbar (green) */
+    --color: #ffffff; /* Text and icon color (white) */
+    padding: 0 10px; /* Padding for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Search bar styling */
+  ion-searchbar {
+    --background: #ffffff; /* White background for search bar */
+    --color: #333333; /* Text color inside the search bar */
+    --placeholder-color: rgba(0, 0, 0, 0.5); /* Placeholder color */
+    border-radius: 10px; /* Rounded corners for the search bar */
+    margin-right: 10px; /* Spacing between search bar and icons */
+  }
+  
+  /* Styling for the notification and profile buttons */
+  ion-button {
+    --background: transparent; /* Transparent background for icons */
+    --color: #ffffff; /* Icon color */
+    font-size: 22px; /* Adjust icon size */
+    padding: 8px; /* Consistent spacing for buttons */
+  }
+  
+  /* Icon styling */
+  ion-icon {
+    font-size: 24px; /* Make the icons larger and more visible */
+  }
+  
+  /* Adjust toolbar height to make everything aligned */
+  ion-toolbar {
+    height: 60px;
+  }
+  
+  /* Customize button hover effect */
+  ion-button:hover {
+    --background: rgba(255, 255, 255, 0.1); /* Slight hover effect for better user feedback */
+  }
+  

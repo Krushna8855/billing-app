@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let product of products" class="product-item">
+      <ion-icon name="cube-outline" slot="start" class="product-icon"></ion-icon>
+      <ion-label>
+        <h2 class="product-name">{{ product.name }}</h2>
+        <p class="product-price">₹ {{ product.price }}</p>
+        <p class="product-quantity">Quantity: {{ product.quantity }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- FAB Button for Adding Product -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary" routerLink="/add-product">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,75 @@
+/* General Page Styling */
+ion-content {
+    --ion-background-color: #f8f9fa;
+    padding: 16px;
+  }
+  
+  /* Customer and Product Fields Styling */
+  .styled-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 8px;
+  }
+  
+  ion-label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Button Styling */
+  ion-button {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    --background: #4caf50; /* Green for primary actions */
+  }
+  
+  ion-button[color="danger"] {
+    --background: #e57373; /* Light Red for Delete */
+  }
+  
+  ion-button[color="light"] {
+    --background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Billing List Items Styling */
+  .billing-item {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .billing-item ion-label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .billing-item ion-button {
+    --color: #e57373; /* Trash button color */
+  }
+  
+  /* Total Amount Styling */
+  .total-item {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    ion-col {
+      --ion-grid-column-padding: 8px;
+    }
+  }
+  

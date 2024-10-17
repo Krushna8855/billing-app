@@ -1,0 +1,48 @@
+/* General Page Styling */
+ion-content {
+    --ion-background-color: #f5f5f5;
+    padding: 16px;
+  }
+  
+  ion-item {
+    --background: #ffffff;
+    --border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  ion-label {
+    color: #4caf50;
+  }
+  
+  ion-input {
+    color: #333333;
+    font-size: 16px;
+  }
+  
+  /* Button Styling */
+  .save-button, .cancel-button {
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  
+  .save-button {
+    --background: #4caf50;
+  }
+  
+  .save-button:hover {
+    --background: #388e3c;
+  }
+  
+  .cancel-button {
+    --background: #f5f5f5;
+    --color: #333333;
+    border: 1px solid #ccc;
+  }
+  
+  .cancel-button:hover {
+    --background: #e0e0e0;
+  }
+  

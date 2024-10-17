@@ -1,0 +1,18 @@
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let billing of billings">
+      <ion-label>
+        <h2>{{ billing.customer.name }} - ₹{{ billing.totalAmount }}</h2>
+        <p>{{ billing.date | date:'short' }}</p>
+        <p>{{ billing.items.length }} items</p>
+      </ion-label>
+      <ion-button fill="clear" (click)="editBilling(billing)">
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" color="danger" (click)="deleteBilling(billing)">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

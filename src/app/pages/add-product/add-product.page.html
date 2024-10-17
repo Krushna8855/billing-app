@@ -1,0 +1,84 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Name</ion-label>
+          <ion-input [(ngModel)]="product.name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Price</ion-label>
+          <ion-input type="number" [(ngModel)]="product.price"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Quantity</ion-label>
+          <ion-input type="number" [(ngModel)]="product.quantity"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Brand</ion-label>
+          <ion-input [(ngModel)]="product.brand"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Supplier</ion-label>
+          <ion-input [(ngModel)]="product.supplier"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Old Stock</ion-label>
+          <ion-input type="number" [(ngModel)]="product.oldStock"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Product Category</ion-label>
+          <ion-input [(ngModel)]="product.category"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Save Button -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="primary" (click)="saveProduct()" class="save-button">
+          Save Product
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- Cancel Button -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="light" (click)="back()" class="cancel-button">
+          Cancel
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
